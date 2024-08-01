@@ -50,6 +50,7 @@ filetree
 ├── requirement.txt
 ├── translation_api_key_setting.yaml
 └── README.md
+```
 
 ### Cite
 If you find our work useful for your research, please consider citing it:
