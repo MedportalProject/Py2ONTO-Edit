@@ -12,7 +12,7 @@ Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translatio
     <img src="https://img.shields.io/badge/Ontology-Tools-blue" />
   </a>
   <a href="">
-    <img src="https://img.shields.io/badge/LICENSE-GPL-3.0-brightgreen" />
+    <img src="https://img.shields.io/badge/LICENSE-GPL-3-brightgreen" />
   </a>
 </h1>
 
