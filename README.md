@@ -19,7 +19,7 @@ Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translatio
 ## Catalogue
 - [Introduction](#Introduction)
 - [Update](#Update)
-- [Document catalogue description](#Document catalogue description)
+- [Filetree](#Filetree)
 - [Cite](#Cite)
 
 ### Introduction
@@ -29,7 +29,7 @@ Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translatio
 [2024/8/2]Release Py2ONTO v0.2
 - Initialisation project
 
-### Document catalogue description
+### Filetree 
 ```
 filetree 
 ├── ARCHITECTURE.md
