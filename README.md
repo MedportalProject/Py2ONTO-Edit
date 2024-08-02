@@ -1,4 +1,4 @@
-# Py2ONTO-Edit
+![image](https://github.com/user-attachments/assets/c9b0bb3a-ae35-4059-b26d-0db932d3bae1)# Py2ONTO-Edit
 
 Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translation
 <a href="https://github.com/MedportalProject/Py2ONTO-Edit">
@@ -24,6 +24,7 @@ Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translatio
 - [Update](#Update)
 - [Filetree](#Filetree)
 - [Getting_Started](#Getting_Started)
+- [Usage](#Usage)
 - [Cite](#Cite)
 
 ### Introduction
@@ -79,9 +80,13 @@ or in Argos Official web page
 weblink: https://www.argosopentech.com/argospm/index/
 ```
 
+### Usage
+There are two use-case in our project, please visit **Usage-FOLDER**
+#### Usage of PyONTO-Edit in programming environment (Python)
+pass
 
-There are two use-case in our project, please visit FOLDER-**Usage**
-
+#### Usage of PyONTO-Edit in command-line interface (CLI)
+pass
 
 ### Cite
 If you find our work useful for your research, please consider citing it:
