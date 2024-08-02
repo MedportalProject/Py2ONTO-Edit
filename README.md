@@ -56,13 +56,14 @@ filetree
 ### Getting_Started
 Requirements:
 ```
-**Python > 3.10**
+Python >= 3.10
 ```
 Package dependency:
 ```
 # Py2ONTO-Edit supports running in CLI and code 
 pip install -r requirement.txt
 ```
+There are two use-case in our project, please visit FOLDER-**Usage**
 
 
 ### Cite
