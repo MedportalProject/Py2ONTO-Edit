@@ -20,6 +20,7 @@ Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translatio
 - [Introduction](#Introduction)
 - [Update](#Update)
 - [Filetree](#Filetree)
+- [Getting Started](#Getting Started)
 - [Cite](#Cite)
 
 ### Introduction
@@ -51,6 +52,10 @@ filetree
 ├── translation_api_key_setting.yaml
 └── README.md
 ```
+
+### Getting Started
+Requirements
+
 
 ### Cite
 If you find our work useful for your research, please consider citing it:
