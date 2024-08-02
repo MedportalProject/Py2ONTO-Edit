@@ -68,7 +68,7 @@ Python >= 3.10
 pip install -r requirement.txt
 ```
 
-* Local translation functions require to download the local Argos-Translate model.
+* Local translation functions require downloading the local Argos-Translate model. The model file must be downloaded into the models folder in this project.
 ```
 - en_zh.argosmodel
 - translate-en_zh-1_1
@@ -77,7 +77,7 @@ weblink: https://drive.google.com/drive/folders/11wxM3Ze7NCgOk_tdtRjwet10DmtvFu3
 or in Argos Official web page
 weblink: https://www.argosopentech.com/argospm/index/
 ```
-It is required to download the model file into the models folder in this project.
+
 
 There are two use-case in our project, please visit FOLDER-**Usage**
 
