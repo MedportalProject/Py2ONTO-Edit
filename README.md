@@ -1,6 +1,7 @@
 <a href="https://github.com/MedportalProject/Py2ONTO-Edit">
   <img src="https://github.com/MedportalProject/Py2ONTO-Edit/blob/main/figs/logo-edit.png" alt="Logo">
 </a>
+
 # Py2ONTO-Edit
 
 A Python-based Tool for Ontology Segmentation and Terms Translation
