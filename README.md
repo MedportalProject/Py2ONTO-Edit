@@ -1,5 +1,5 @@
 <a href="https://github.com/MedportalProject/Py2ONTO-Edit">
-  <img src="https://github.com/MedportalProject/Py2ONTO-Edit/blob/main/figs/logo-edit.png" alt="Logo">
+  <img src="https://github.com/MedportalProject/Py2ONTO-Edit/blob/main/figs/logo-edit2.png" alt="Logo">
 </a>
 
 # Py2ONTO-Edit
