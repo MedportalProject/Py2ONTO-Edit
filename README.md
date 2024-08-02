@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/79c2af59-4ae8-48ad-8ba5-dac9f01f4eba)![image](https://github.com/user-attachments/assets/c9b0bb3a-ae35-4059-b26d-0db932d3bae1)# Py2ONTO-Edit
+# Py2ONTO-Edit
 
 Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translation
 <a href="https://github.com/MedportalProject/Py2ONTO-Edit">
