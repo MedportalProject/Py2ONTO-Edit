@@ -1,6 +1,9 @@
 # Py2ONTO-Edit
 
 Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translation
+<a href="https://github.com/MedportalProject/Py2ONTO-Edit">
+  <img src="https://github.com/MedportalProject/Py2ONTO-Edit/blob/main/figs/logo-edit.png" alt="Logo">
+</a>
 <h1 align="center">
   <a href="">
     <img src="https://img.shields.io/badge/releases-v0.2-red" />
