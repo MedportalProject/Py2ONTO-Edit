@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c9b0bb3a-ae35-4059-b26d-0db932d3bae1)# Py2ONTO-Edit
+![image](https://github.com/user-attachments/assets/79c2af59-4ae8-48ad-8ba5-dac9f01f4eba)![image](https://github.com/user-attachments/assets/c9b0bb3a-ae35-4059-b26d-0db932d3bae1)# Py2ONTO-Edit
 
 Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translation
 <a href="https://github.com/MedportalProject/Py2ONTO-Edit">
@@ -83,10 +83,31 @@ weblink: https://www.argosopentech.com/argospm/index/
 ### Usage
 There are two use-case in our project, please visit **Usage-FOLDER**
 #### Usage of PyONTO-Edit in programming environment (Python)
-pass
+```
+# import all function of py2onto-edit
+from editonto import *
+# load HumanDO.owl
+humanDO = EDIT_ONTO("./HumanDO.owl")
+
+# 1.1 Segmentation method 1: Global extraction method
+# Get all data under a single root node and store to new_onto.owl
+humanDO.cut_part_onto('orofacial cleft')
+
+# 2.1 Export all class data from ontology into csv file
+humanDO.owl_to_csv("./new_onto.owl")
+
+# 2.2 Translation with DeepL
+humanDO.translate_terms_with_deepl("./part_onto.csv",'your-deepl-api')
+
+# 2.3 Saving translated label data to the ontology
+humanDO.add_Chinese_label('./new_onto.owl', './all_classes_with_deepl.csv')
+```
 
 #### Usage of PyONTO-Edit in command-line interface (CLI)
-pass
+```
+Task 1: only segment ontology
+python editonto.py -o ./HumanDO.owl -m all -s “orofacial cleft”
+```
 
 ### Cite
 If you find our work useful for your research, please consider citing it:
