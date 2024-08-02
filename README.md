@@ -16,7 +16,7 @@ A Python-based Tool for Ontology Segmentation and Terms Translation
     <img src="https://img.shields.io/badge/Ontology-Tools-blue" />
   </a>
   <a href="">
-    <img src="https://img.shields.io/badge/LICENSE-GPL 3-brightgreen" />
+    <img src="https://img.shields.io/badge/LICENSE-LGPL 3-brightgreen" />
   </a>
 </h1>
 
