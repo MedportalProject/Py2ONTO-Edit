@@ -113,7 +113,7 @@ python editonto.py -o ./HumanDO.owl -m all -s “orofacial cleft”
 If you find our work useful for your research, please consider citing it:
 ```
 @article{wang2024XXXX,
-  title={Py2ONTO V0.2: a Python-based Tool for Ontology Segmentation and Terms Translation},
+  title={Py2ONTO-Edit: a Python-based Tool for Ontology Segmentation and Terms Translation},
   author={Zhe Wang, Zhigang Wang, Zunfan Chen, Shen Yang, Xiaolin Yang1 and Yan Zhu},
   journal={XXXXX},
   year={2024}
