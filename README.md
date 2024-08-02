@@ -57,16 +57,16 @@ filetree
 ```
 
 ### Getting_Started
-Requirements:
+**Requirements:**
 ```
 Python >= 3.10
 ```
-Package dependency:
+
+**Package dependency:**
 ```
 # Py2ONTO-Edit supports running in CLI and code 
 pip install -r requirement.txt
 ```
-There are two use-case in our project, please visit FOLDER-**Usage**
 
 * Local translation functions require to download the local Argos-Translate model.
 ```
@@ -78,6 +78,8 @@ or in Argos Official web page
 weblink: https://www.argosopentech.com/argospm/index/
 ```
 It is required to download the model file into the models folder in this project.
+
+There are two use-case in our project, please visit FOLDER-**Usage**
 
 
 ### Cite
