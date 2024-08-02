@@ -24,7 +24,7 @@ Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translatio
 - [Cite](#Cite)
 
 ### Introduction
-Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translation
+Py2ONTO-Edit updates new functions that fouces on ontology segmentation and term translation of Python-Project
 
 ### Update
 [2024/8/2]Release Py2ONTO-EDIT
