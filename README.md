@@ -58,6 +58,7 @@ filetree
 ├── translation_api_key_setting.yaml
 └── README.md
 ```
+_**You must enter your DeepL auth key, ChatGLM-130B auth key, and Gemini auth key in the file translation_api_key_setting.yaml.**_
 
 ### Getting_Started
 **Requirements:**
