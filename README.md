@@ -80,7 +80,7 @@ weblink: https://drive.google.com/drive/folders/11wxM3Ze7NCgOk_tdtRjwet10DmtvFu3
 or in Argos Official web page
 weblink: https://www.argosopentech.com/argospm/index/
 ```
-_**You must enter your DeepL auth key, ChatGLM-130B auth key, and Gemini auth key in the file translation_api_key_setting.yaml to use Py2ONTO-Edit.**_
+**You must enter your DeepL auth key, ChatGLM-130B auth key, and Gemini auth key in the file _'translation_api_key_setting.yaml'_ to use Py2ONTO-Edit.**
 
 ### Usage
 There are two use-case in our project, please visit **Usage-FOLDER**
