@@ -70,7 +70,7 @@ Python >= 3.10
 # Py2ONTO-Edit supports running in CLI and code 
 pip install -r requirement.txt
 ```
-
+[!NOTE]
 * Local translation functions require downloading the local Argos-Translate model. The model file must be downloaded into the models folder in this project.
 ```
 - en_zh.argosmodel
@@ -82,6 +82,7 @@ or in Argos Official web page
 - translate-en_zh-1_9.argosmodel(suggestion)
 weblink: https://www.argosopentech.com/argospm/index/
 ```
+[!NOTE]
 **You must enter your DeepL auth key, ChatGLM-130B auth key, and Gemini auth key in the file _'translation_api_key_setting.yaml'_ to translate terms via Py2ONTO-Edit.**
 
 ### Usage
@@ -119,11 +120,11 @@ python editonto.py -o ./HumanDO.owl -m all -s “orofacial cleft”
 ### Cite
 If you find our work useful for your research, please consider citing it:
 ```
+
 @article{wang2024XXXX,
   title={Py2ONTO-Edit: a Python-based Tool for Ontology Segmentation and Terms Translation},
-  author={Zhe Wang, Zhigang Wang, Zunfan Chen, Shen Yang, Xiaolin Yang1 and Yan Zhu},
+  author={Zhe Wang, Zhigang Wang, Zunfan Chen, Shen Yang, Xiaolin Yang and Yan Zhu},
   journal={XXXXX},
   year={2024}
-- todo
 ```
 
