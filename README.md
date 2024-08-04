@@ -70,8 +70,8 @@ Python >= 3.10
 # Py2ONTO-Edit supports running in CLI and code 
 pip install -r requirement.txt
 ```
-[!NOTE]
-* Local translation functions require downloading the local Argos-Translate model. The model file must be downloaded into the models folder in this project.
+> [!NOTE]
+> * Local translation functions require downloading the local Argos-Translate model. The model file must be downloaded into the models folder in this project.
 ```
 - en_zh.argosmodel
 - translate-en_zh-1_1.argosmodel
@@ -82,8 +82,8 @@ or in Argos Official web page
 - translate-en_zh-1_9.argosmodel(suggestion)
 weblink: https://www.argosopentech.com/argospm/index/
 ```
-[!NOTE]
-**You must enter your DeepL auth key, ChatGLM-130B auth key, and Gemini auth key in the file _'translation_api_key_setting.yaml'_ to translate terms via Py2ONTO-Edit.**
+> [!NOTE]
+> **You must enter your DeepL auth key, ChatGLM-130B auth key, and Gemini auth key in the file _'translation_api_key_setting.yaml'_ to translate terms via Py2ONTO-Edit.**
 
 ### Usage
 There are two use-case in our project, please visit **Usage-FOLDER**
