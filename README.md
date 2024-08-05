@@ -119,6 +119,21 @@ Task 1: only segment ontology
 python editonto.py -o ./HumanDO.owl -m all -s “orofacial cleft”
 ```
 
+Task 2: only terms translation
+```
+python editonto.py -o ./result/cut_onto.owl -m none -t d
+```
+> [!Note]
+> d: DeepL
+> l: argos translate
+> g: gemini
+> c: chatglm4
+
+Task 3: Segment ontology and terms translation
+```
+python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft" -t d
+```
+
 ### Cite
 If you find our work useful for your research, please consider citing it:
 ```
