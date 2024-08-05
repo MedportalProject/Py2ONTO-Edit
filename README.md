@@ -112,8 +112,10 @@ humanDO.add_Chinese_label('./new_onto.owl', './all_classes_with_deepl.csv')
 ```
 # help of Py2ONTO-Edit
 python editonto.py -h
+```
 
 Task 1: only segment ontology
+```
 python editonto.py -o ./HumanDO.owl -m all -s “orofacial cleft”
 ```
 
