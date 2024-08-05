@@ -124,10 +124,10 @@ Task 2: only terms translation
 python editonto.py -o ./result/cut_onto.owl -m none -t d
 ```
 > [!Note]
-> d: DeepL;
-> l: argos translate;
-> g: gemini;
-> c: chatglm4
+> d: DeepL 
+> l: argos translate 
+> g: gemini 
+> c: chatglm4 
 
 Task 3: Segment ontology and terms translation
 ```
