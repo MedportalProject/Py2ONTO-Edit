@@ -130,7 +130,7 @@ python editonto.py -o ./HumanDO.owl -m all -s “orofacial cleft”
 
 Task 2: only terms translation
 ```
-python editonto.py -o ./result/cut_onto.owl -m none -t d
+python editonto.py -o ./result/cut_onto.owl -m none -l "en2de" -t d  
 ```
 > [!Note]
 > d: DeepL  
@@ -140,7 +140,7 @@ python editonto.py -o ./result/cut_onto.owl -m none -t d
 
 Task 3: Segment ontology and terms translation
 ```
-python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft" -t d
+python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft" -l "en2zh" -t d  
 ```
 
 ### Cite
