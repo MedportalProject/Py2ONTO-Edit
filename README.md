@@ -88,7 +88,7 @@ weblink: https://drive.google.com/drive/folders/11wxM3Ze7NCgOk_tdtRjwet10DmtvFu3
 or in Argos Official web page
 - translate-en_zh-1_9.argosmodel(en2zh:suggestion)  
 - translate-en_fr-1_9.argosmodel(en2fr:suggestion)
-- translate-en_de-1_0.argosmodel(en2fr:suggestion)  
+- translate-en_de-1_0.argosmodel(en2de:suggestion)  
 weblink: https://www.argosopentech.com/argospm/index/
 ```
 > [!NOTE]
