@@ -125,7 +125,7 @@ python editonto.py -h
 
 Task 1: only segment ontology
 ```
-python editonto.py -o ./HumanDO.owl -m all -s “orofacial cleft”
+python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft"
 ```
 
 Task 2: only terms translation
