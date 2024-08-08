@@ -133,10 +133,11 @@ Task 2: only terms translation
 python editonto.py -o ./result/cut_onto.owl -m none -l "en2de" -t d  
 ```
 > [!Note]
-> l: translation mode select  
+> -l: translation mode select  
 > en2zh: English to Chinese  
 > en2fr: English to French  
-> en2de: English to German  
+> en2de: English to German
+
 > -t: translation server select
 > d: DeepL  
 > l: argos translate  
