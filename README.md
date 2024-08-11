@@ -4,7 +4,7 @@
 
 # Py2ONTO-Edit
 
-A Python-based Tool for Ontology Segmentation and Terms Translation
+A Python-based Tool for Term Extraction and Translation of Ontology
 <h1 align="center">
   <a href="">
     <img src="https://img.shields.io/badge/releases-v0.2-red" />
@@ -29,7 +29,7 @@ A Python-based Tool for Ontology Segmentation and Terms Translation
 - [Cite](#Cite)
 
 ### Introduction
-Py2ONTO-Edit updates new functions that fouces on ontology segmentation and term translation of Python-Project
+Py2ONTO-Edit updates new functions that fouces on term extraction and translation of Python-Project
 
 ### Update
 [2024/8/6]add new translate function
