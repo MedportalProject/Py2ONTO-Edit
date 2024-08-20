@@ -18,6 +18,9 @@ A Python-based Tool for Term Extraction and Translation of Ontology
   <a href="">
     <img src="https://img.shields.io/badge/LICENSE-LGPL 3-brightgreen" />
   </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/Python-snow?logo=python&logoColor=3776AB" alt="" />
+  </a>
 </h1>
 
 ## Catalogue
