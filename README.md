@@ -98,9 +98,9 @@ weblink: https://www.argosopentech.com/argospm/index/
 > **You must enter your DeepL auth key, ChatGLM-130B auth key, and Gemini auth key in the file _'translation_api_key_setting.yaml'_ to translate terms via Py2ONTO-Edit.**
 
 ### Usage
-There are two use-case in our project, please visit **Usage-FOLDER**
-./Usage/Example in CLI.ipynb   
-./Example in code.ipynb    
+There are two use-case in our project, please visit **Usage-FOLDER**    
+- ./Usage/Example in CLI.ipynb   
+- ./Example in code.ipynb    
 
 #### Usage of PyONTO-Edit in programming environment (Python)
 ```
