@@ -160,7 +160,7 @@ If you find our work useful for your research, please consider citing it:
 ```
 @misc{wang2024py2onto-edit,
 author = {Zhe Wang, Zhigang Wang, Zunfan Chen, Shen Yang, Xiaolin Yang and Yan Zhu},
-title={Py2ONTO-Edit: a Python-based Tool for Ontology Segmentation and Terms Translation},
+title={Py2ONTO-Edit: a Python-based Tool for Ontology Term Extraction and Translation},
 year = {2024},
 publisher = {GitHub},
 howpublished = {\url{https://github.com/MedportalProject/Py2ONTO-Edit}},
