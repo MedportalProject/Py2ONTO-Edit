@@ -1,0 +1,1108 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://purl.obolibrary.org/obo/doid/doid-non-classified.owl"
+         xmlns="http://purl.obolibrary.org/obo/doid/doid-non-classified.owl#"
+         xmlns:oboI="http://www.geneontology.org/formats/oboInOwl#"
+         xmlns:x_1.1="http://purl.org/dc/elements/1.1/"
+         xmlns:obo="http://purl.obolibrary.org/obo/"
+         xmlns:term="http://purl.org/dc/terms/"
+         xmlns:core="http://www.w3.org/2004/02/skos/core#">
+
+<owl:Ontology rdf:about="http://purl.obolibrary.org/obo/doid/doid-non-classified.owl">
+  <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/doid/releases/2024-04-30/doid-non-classified.owl"/>
+  <term:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0"/>
+  <x_1.1:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Disease Ontology has been developed as a standardized ontology for human disease with the purpose of providing the biomedical community with consistent, reusable and sustainable descriptions of human disease terms, phenotype characteristics and related medical vocabulary disease concepts.</x_1.1:description>
+  <x_1.1:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human Disease Ontology</x_1.1:title>
+  <oboI:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:default-namespace>
+  <oboI:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboI:hasOBOFormatVersion>
+  <oboI:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lschriml</oboI:saved-by>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Disease Ontology content is available via the Creative Commons Public Domain Dedication CC0 1.0 Universal license (https://creativecommons.org/publicdomain/zero/1.0/).</rdfs:comment>
+  <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-04-30</owl:versionInfo>
+</owl:Ontology>
+
+<owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IDO_0000664">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relating the disease to it’s causation (disease and disorder).</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has material basis in</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO#_is_a">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation defining child to partent inheritance type.</obo:IAO_0000115>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_a</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comment.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comment</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human readable name for this class.</obo:IAO_0000115>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OWL deprecated.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">owl:deprecated</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Title.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">title</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#default-namespace">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default namespace.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">default-namespace</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has OBO format version.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#saved-by">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saved by.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saved-by</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+  <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference database or publication source.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has ontology root term.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_ontology_root_term</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use on obsolete terms, relating the term to another term that can be used as a substitute.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">term replaced by</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#DO_AGR_slim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_AGR_slim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_AGR_slim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#DO_CFDE_slim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_CFDE_slim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_CFDE_slim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#DO_FlyBase_slim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_FlyBase_slim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_FlyBase_slim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#DO_GXD_slim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_GXD_slim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_GXD_slim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#DO_IEDB_slim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_IEDB_slim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_IEDB_slim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#DO_MGI_slim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_MGI_slim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_MGI_slim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#DO_RAD_slim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_RAD_slim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_RAD_slim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#DO_cancer_slim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_cancer_slim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_cancer_slim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#DO_infectious_disease_slim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_infectious_disease_slim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_infectious_disease_slim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#DO_rare_slim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_rare_slim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO_rare_slim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#GOLD">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOLD</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOLD</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#NCIthesaurus">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIthesaurus</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIthesaurus</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#TopNodes_DOcancerslim">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TopNodes_DOcancerslim</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TopNodes_DOcancerslim</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#gram-negative_bacterial_infectious_disease">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram-negative_bacterial_infectious_disease</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram-negative_bacterial_infectious_disease</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#gram-positive_bacterial_infectious_disease">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram-positive_bacterial_infectious_disease</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram-positive_bacterial_infectious_disease</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#sexually_transmitted_infectious_disease">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sexually_transmitted_infectious_disease</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sexually_transmitted_infectious_disease</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#tick-borne_infectious_disease">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tick-borne_infectious_disease</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tick-borne_infectious_disease</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doid#zoonotic_infectious_disease">
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zoonotic_infectious_disease</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zoonotic_infectious_disease</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:date</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dc:type.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:type</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">License.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">license</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subset property, name of subet.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subset_property</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">auto-generated-by</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Author of the class.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">created_by</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date class was created.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">creation_date</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ID of merged class.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_alternative_id</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Broad synonym.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exact synonym.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Narrow synonym.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name space of the ontology.</obo:IAO_0000115>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has related synonym.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In subset.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skos concept mapping used to state a hierarchical mapping link between two concepts where the DO concept is broad and the xref is narrow (represents subtypes).</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has broader match</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skos concept mapping used to link two concepts that are sufficiently similar that they can be used interchangeably.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has close match</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skos concept mapping used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact match</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skos concept mapping used to state a hierarchical mapping link between two concepts where the DO concept is narrow (DO represents subtypes) and the xref is broad.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has narrower match</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skos concept mapping used to state an associative mapping link between two concepts.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has related match</rdfs:label>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_9991118"/>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050567">
+  <obo:IAO_0000115 xml:lang="en">A physical disorder that is characterized by cleft lip and/or cleft palate that result in feeding, speech and hearing problems caused by failures during development.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:PS119530</oboI:hasDbXref>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0050567</oboI:id>
+  <rdfs:comment xml:lang="en">Xref MGI.
+OMIM mapping confirmed by DO. [SN].</rdfs:comment>
+  <rdfs:label xml:lang="en">orofacial cleft</rdfs:label>
+  <rdfs:label xml:lang="zh">口面裂</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0060613">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_674"/>
+  <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_rare_slim"/>
+  <obo:IAO_0000115 xml:lang="en">A cleft palate that has_material_basis_in mutation in the TBX22 gene on chromosome Xq21.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:303400</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORDO:324601</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">X-linked cleft palate and ankyloglossia</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0060613</oboI:id>
+  <rdfs:label xml:lang="en">X-linked cleft palate with or without ankyloglossia</rdfs:label>
+  <rdfs:label xml:lang="zh">伴有或不伴有踝舌的 X 连锁腭裂</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_674">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_rare_slim"/>
+  <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft characterized by a fissure of the soft and/or hard palate, due to faulty fusion of the two plates of the skull that form the hard palate.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10CM:Q35</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9CM:749.0</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D002972</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI:C87069</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORDO:99772</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT_US_2023_03_01:156940009</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS_CUI:C0008925</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">Palatoschisis</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:674</oboI:id>
+  <rdfs:comment xml:lang="en">OMIM mapping confirmed by DO. [SN].</rdfs:comment>
+  <rdfs:label xml:lang="en">cleft palate</rdfs:label>
+  <rdfs:label xml:lang="zh">腭裂</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080395">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft characterized by autosomal dominant inheritance that has_material_basis_in variation in chromosome region 6p24.3.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C566121</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:119530</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">nonsyndromic cleft lip with or without cleft palate 1</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080395</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 1</rdfs:label>
+  <rdfs:label xml:lang="zh">口面裂 1</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080396">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in variation in the chromosome region 2p13.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C566419</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:602966</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">nonsyndromic cleft lip with or without cleft palate 2</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080396</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 2</rdfs:label>
+  <rdfs:label xml:lang="zh">颚裂 2</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080397">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in variation in the chromosomal region 19q13.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C563448</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:600757</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">nonsyndromic cleft lip with or without cleft palate 3</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080397</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 3</rdfs:label>
+  <rdfs:label xml:lang="zh">口裂 3</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080398">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in variation in the 4q21-q31 chromosomal region.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C564251</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:608371</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">nonsyndromic cleft lip with or without cleft palate 4</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080398</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 4</rdfs:label>
+  <rdfs:label xml:lang="zh">口裂 4</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080399">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in mutation in the MSX1 gene on chromosome 4p16.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C563843</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:608874</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">nonsyndromic cleft lip with or without cleft palate 5</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080399</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 5</rdfs:label>
+  <rdfs:label xml:lang="zh">口裂 5</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080400">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in by homozygous mutation in the PVRL1 gene on chromosome 11q23.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C563464</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">Zlotogora-Ogur syndrome</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080400</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 7</rdfs:label>
+  <core:exactMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C563464</core:exactMatch>
+  <rdfs:label xml:lang="zh">口裂 7</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080401">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in heterozygous mutation in the TP63 gene on chromosome 3q28.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:618149</oboI:hasDbXref>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080401</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 8</rdfs:label>
+  <rdfs:label xml:lang="zh">口裂 8</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080402">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in variation in the chromosome region 13q33.1-q34.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C563675</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:610361</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">nonsyndromic cleft lip with or without cleft palate 9</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080402</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 9</rdfs:label>
+  <rdfs:label xml:lang="zh">颚裂 9</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080403">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in mutation in the SUMO1 gene on chromosome 2q33.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C566605</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:613705</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">nonsyndromic cleft lip with or without cleft palate 10</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080403</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 10</rdfs:label>
+  <rdfs:label xml:lang="zh">颚裂 10</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080404">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in heterozygous mutation in the BMP4 gene on chromosome 14q22.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C567410</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:600625</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">nonsyndromic cleft lip with or without cleft palate 11</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080404</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 11</rdfs:label>
+  <rdfs:label xml:lang="zh">口面裂 11</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080405">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in variation in the chromosome region 8q24.3.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C567548</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:612858</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">nonsyndromic cleft lip with or without cleft palate 12</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080405</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 12</rdfs:label>
+  <rdfs:label xml:lang="zh">口面裂 12</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080406">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft characterized by autosomal doninant inhertitance that has_material_basis_in variation in chromosome region 1p33 associated with enrichment of the T allele of SNP rs3827730.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:613857</oboI:hasDbXref>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080406</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 13</rdfs:label>
+  <rdfs:label xml:lang="zh">颚裂 13</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080407">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that is characterized by incomplete median clefts of both the lower lip and upper lip, double labial frenulum and fusion of the upper gingival and upper labial mucosa, in addition to poor dental alignment, and increased interdental distance between the lower and upper median incisors.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:615892</oboI:hasDbXref>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080407</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 14</rdfs:label>
+  <rdfs:label xml:lang="zh">颚裂 14</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080408">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in mutation in the DLX4 gene on chromosome 17q21.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:616788</oboI:hasDbXref>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080408</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 15</rdfs:label>
+  <rdfs:label xml:lang="zh">口面裂 15</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080593">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that has_material_basis_in variation in an enhancer of the IRF6 gene on chromosome 1q32.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:608864</oboI:hasDbXref>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080593</oboI:id>
+  <rdfs:label xml:lang="en">orofacial cleft 6</rdfs:label>
+  <rdfs:label xml:lang="zh">口裂 6</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0110213">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_674"/>
+  <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_rare_slim"/>
+  <obo:IAO_0000115 xml:lang="en">A cleft palate seen as an isolated malformation, distinct from cleft lip with or without cleft palate.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10CM:Q35.1</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10CM:Q35.3</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10CM:Q35.5</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10CM:Q35.7</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10CM:Q35.9</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:119540</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORDO:2014</oboI:hasDbXref>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0110213</oboI:id>
+  <rdfs:label xml:lang="en">isolated cleft palate</rdfs:label>
+  <rdfs:label xml:lang="zh">孤立性腭裂</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0110214">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_674"/>
+  <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_rare_slim"/>
+  <obo:IAO_0000115 xml:lang="en">A cleft palate that is characterized as a fissure type embryopathy that affects in varying degrees the soft palate.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10CM:Q35.3</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:C562950</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:119570</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORDO:99772</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">cleft velum</oboI:hasExactSynonym>
+  <oboI:hasExactSynonym xml:lang="en">cleft velum palatinum</oboI:hasExactSynonym>
+  <oboI:hasExactSynonym xml:lang="en">soft cleft palate</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0110214</oboI:id>
+  <rdfs:label xml:lang="en">cleft soft palate</rdfs:label>
+  <rdfs:label xml:lang="zh">软腭裂</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0111706">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft characterized by a congenital unilateral or bilateral oculo-facial defect beginning at the upper lip lateral to the Cupid's bow, then running lateral to the nasal wing, ending at the the lower eyelid lateral to the inferior punctum that has_material_basis_in heterozygous mutation in the SPECC1L gene on chromosome 22q11.23.</obo:IAO_0000115>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:600251</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">Tessier number 4 facial cleft</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0111706</oboI:id>
+  <rdfs:label xml:lang="en">oblique facial clefting 1</rdfs:label>
+  <rdfs:label xml:lang="zh">面部斜裂 1</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_9296">
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+  <obo:IAO_0000115 xml:lang="en">An orofacial cleft that is characterized by a congenital defect in the upper lip where the maxillary prominence fails to merge with the merged medial nasal prominences.</obo:IAO_0000115>
+  <oboI:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:9333</oboI:hasAlternativeId>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0003959</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10CM:Q36</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9CM:749.1</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9CM:749.11</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D002971</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI:C87175</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT_US_2023_03_01:156941008</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT_US_2023_03_01:62696001</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS_CUI:C0008924</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS_CUI:C0158651</oboI:hasDbXref>
+  <oboI:hasExactSynonym xml:lang="en">Labium leporinum</oboI:hasExactSynonym>
+  <oboI:hasExactSynonym xml:lang="en">cheiloschisis</oboI:hasExactSynonym>
+  <oboI:hasExactSynonym xml:lang="en">cleft lip, unilateral, complete</oboI:hasExactSynonym>
+  <oboI:hasExactSynonym xml:lang="en">complete unilateral cleft lip</oboI:hasExactSynonym>
+  <oboI:hasExactSynonym xml:lang="en">hare lip</oboI:hasExactSynonym>
+  <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboI:hasOBONamespace>
+  <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:9296</oboI:id>
+  <rdfs:label xml:lang="en">cleft lip</rdfs:label>
+  <rdfs:label xml:lang="zh">唇裂</rdfs:label>
+</owl:Class>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backward compatible with.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">owl:backwardCompatibleWith</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#incompatibleWith">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incompatible with.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">owl:incompatibleWith</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is defined by.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rdfs:isDefinedBy</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#priorVersion">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prior version.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">owl:priorVersion</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">See also.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rdfs:seeAlso</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version info.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">owl:versionInfo</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
+  <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has obsolescence reason.</obo:IAO_0000115>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obsolescence_reason</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/doid#has_symptom">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has symptoms</rdfs:label>
+</rdf:Description>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#priorVersion"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prior version.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.w3.org/2002/07/owl#priorVersion</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#incompatibleWith"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incompatible with.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.w3.org/2002/07/owl#incompatibleWith</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#backwardCompatibleWith"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backward compatible with.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.w3.org/2002/07/owl#backwardCompatibleWith</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">See also.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.w3.org/2000/01/rdf-schema#seeAlso</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000231"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has obsolescence reason.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.obolibrary.org/obo/IAO_0000231</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_9296"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that is characterized by a congenital defect in the upper lip where the maxillary prominence fails to merge with the merged medial nasal prominences.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://en.wikipedia.org/wiki/Cleft_lip_and_cleft_palate</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.cdc.gov/ncbddd/birthdefects/cleftlip.html</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_674"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft characterized by a fissure of the soft and/or hard palate, due to faulty fusion of the two plates of the skull that form the hard palate.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://en.wikipedia.org/wiki/Cleft_lip_and_palate#Cleft_palate</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://ghr.nlm.nih.gov/glossary=cleftpalate</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0111706"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft characterized by a congenital unilateral or bilateral oculo-facial defect beginning at the upper lip lateral to the Cupid's bow, then running lateral to the nasal wing, ending at the the lower eyelid lateral to the inferior punctum that has_material_basis_in heterozygous mutation in the SPECC1L gene on chromosome 22q11.23.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://en.wikipedia.org/wiki/Craniofacial_cleft#Tessier_classification</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/21703590</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/820824</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0110214"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007636"/>
+  <owl:annotatedTarget xml:lang="en">A cleft palate that is characterized as a fissure type embryopathy that affects in varying degrees the soft palate.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=99772</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0110213"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">A cleft palate seen as an isolated malformation, distinct from cleft lip with or without cleft palate.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/7143384</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080593"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in variation in an enhancer of the IRF6 gene on chromosome 1q32.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/17702008</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080408"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in mutation in the DLX4 gene on chromosome 17q21.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/25954033</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080407"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007636"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that is characterized by incomplete median clefts of both the lower lip and upper lip, double labial frenulum and fusion of the upper gingival and upper labial mucosa, in addition to poor dental alignment, and increased interdental distance between the lower and upper median incisors.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&amp;Expert=401942</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080406"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft characterized by autosomal doninant inhertitance that has_material_basis_in variation in chromosome region 1p33 associated with enrichment of the T allele of SNP rs3827730.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/21295280</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080405"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in variation in the chromosome region 8q24.3.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/19270707</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080404"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in heterozygous mutation in the BMP4 gene on chromosome 14q22.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/19249007</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080403"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in mutation in the SUMO1 gene on chromosome 2q33.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/16990542</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080402"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in variation in the chromosome region 13q33.1-q34.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/16909398</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080401"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in heterozygous mutation in the TP63 gene on chromosome 3q28.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/29500247</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080400"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in by homozygous mutation in the PVRL1 gene on chromosome 11q23.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/10932188</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080399"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in mutation in the MSX1 gene on chromosome 4p16.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/10742093</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/12807959</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080398"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in variation in the 4q21-q31 chromosomal region.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/12087515</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/7820940</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080397"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in variation in the chromosomal region 19q13.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/7668251</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080396"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft that has_material_basis_in variation in the chromosome region 2p13.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/2570526</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080395"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">An orofacial cleft characterized by autosomal dominant inheritance that has_material_basis_in variation in chromosome region 6p24.3.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/7711723</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0060613"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+  <owl:annotatedTarget xml:lang="en">A cleft palate that has_material_basis_in mutation in the TBX22 gene on chromosome Xq21.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pubmed/14729838</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0050567"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+  <owl:annotatedTarget xml:lang="en">A physical disorder that is characterized by cleft lip and/or cleft palate that result in feeding, speech and hearing problems caused by failures during development.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://en.wikipedia.org/wiki/Cleft_lip_and_cleft_palate</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.cdc.gov/ncbddd/birthdefects/surveillancemanual/chapters/chapter-4/chapter4-6.html</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO#_is_a"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation defining child to partent inheritance type.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://geneontology.org/docs/ontology-relations/</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.obolibrary.org/obo/rex#is_a</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IDO_0000664"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relating the disease to it’s causation (disease and disorder).</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.obolibrary.org/obo/IDO_0000664</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skos concept mapping used to state an associative mapping link between two concepts.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/2009/08/skos-reference/skos.html#relatedMatch</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skos concept mapping used to state a hierarchical mapping link between two concepts where the DO concept is narrow (DO represents subtypes) and the xref is broad.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.w3.org/2009/08/skos-reference/skos.html#narrowMatch</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skos concept mapping used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.w3.org/2009/08/skos-reference/skos.html#exactMatch</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skos concept mapping used to link two concepts that are sufficiently similar that they can be used interchangeably.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.w3.org/2009/08/skos-reference/skos.html#closeMatch</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skos concept mapping used to state a hierarchical mapping link between two concepts where the DO concept is broad and the xref is narrow (represents subtypes).</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.w3.org/2009/08/skos-reference/skos.html#broadMatch</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version info.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.w3.org/2002/07/owl#versionInfo</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#deprecated"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OWL deprecated.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.w3.org/2002/07/owl#deprecated</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human readable name for this class.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.w3.org/2000/01/rdf-schema#label</oboI:hasDbXref>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.w3.org/TR/owl-guide/</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is defined by.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.w3.org/2000/01/rdf-schema#isDefinedBy</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comment.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.w3.org/2000/01/rdf-schema#comment</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saved by.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#saved-by</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In subset.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#inSubset</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#id"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.obolibrary.org/obo/IAO_0020000</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has related synonym.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name space of the ontology.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#hasOBONamespace</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has OBO format version.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Narrow synonym.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exact synonym.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference database or publication source.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#hasDbXref</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Broad synonym.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ID of merged class.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#hasAlternativeId</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default namespace.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#default-namespace</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#date"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.org/dc/elements/1.1/date</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date class was created.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#creation_date</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Author of the class.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#created_by</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subset property, name of subet.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.geneontology.org/formats/oboInOwl#SubsetProperty</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.org/dc/terms/license"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">License.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.org/dc/terms/license</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.org/dc/elements/1.1/type"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dc:type.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.org/dc/elements/1.1/type</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Title.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.org/dc/elements/1.1/title</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.org/dc/elements/1.1/description</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0100001"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use on obsolete terms, relating the term to another term that can be used as a substitute.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ebi.ac.uk/ols/ontologies/iao/properties?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0100001</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000700"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has ontology root term.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.obolibrary.org/obo/IAO_0000700</oboI:hasDbXref>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000119"/>
+  <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007.</owl:annotatedTarget>
+  <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://purl.obolibrary.org/obo/iao.owl</oboI:hasDbXref>
+</owl:Axiom>
+
+
+</rdf:RDF>
