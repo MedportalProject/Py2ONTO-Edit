@@ -99,8 +99,8 @@ weblink: https://www.argosopentech.com/argospm/index/
 
 ### Usage
 There are two use-case in our project, please visit **Usage-FOLDER**    
-- ./Usage/Example in CLI.ipynb   
-- ./Example in code.ipynb    
+- [Example in CLI.ipynb](https://github.com/MedportalProject/Py2ONTO-Edit/blob/main/Usage/Example%20in%20CLI.ipynb)   
+- [Example in code.ipynb](https://github.com/MedportalProject/Py2ONTO-Edit/blob/main/Usage/Example%20in%20code.ipynb)    
 
 #### Usage of PyONTO-Edit in programming environment (Python)
 ```
