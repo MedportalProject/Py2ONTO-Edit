@@ -1,0 +1,8 @@
+deepl_setting:
+  auth_key: your_deepl_API_key
+
+glm_setting:
+  api_key: your_glm_API_key
+
+gemini_setting:
+  api_key: your_gemini_API_key
