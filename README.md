@@ -99,6 +99,9 @@ weblink: https://www.argosopentech.com/argospm/index/
 
 ### Usage
 There are two use-case in our project, please visit **Usage-FOLDER**
+./Usage/Example in CLI.ipynb   
+./Example in code.ipynb    
+
 #### Usage of PyONTO-Edit in programming environment (Python)
 ```
 # import all function of py2onto-edit
