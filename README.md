@@ -80,7 +80,7 @@ pip install -r requirement.txt
 > [!NOTE]
 > * Local translation functions require downloading the local Argos-Translate model. The model file must be downloaded into the models folder in this project.
 ```
-English to Chinese 
+English to Chinese, French and German      
 - en_zh.argosmodel
 - translate-en_zh-1_1.argosmodel
 - translate-en_zh-1_9.argosmodel(en2zh:suggestion)  
