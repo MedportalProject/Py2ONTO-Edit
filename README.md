@@ -117,7 +117,7 @@ humanDO.cut_part_onto('orofacial cleft')
 humanDO.owl_to_csv("./new_onto.owl")
 
 # 2.2 Translation with DeepL
-humanDO.translate_terms_with_deepl("./part_onto.csv",'your-deepl-api')
+humanDO.translate_terms_with_deepl("./part_onto.csv", "en2zh", "your-deepl-api")
 
 # 2.3 Saving translated label data to the ontology
 humanDO.add_Chinese_label('./new_onto.owl', './all_classes_with_deepl.csv')
