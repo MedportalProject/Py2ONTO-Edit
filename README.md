@@ -130,7 +130,7 @@ humanDO.add_Chinese_label('./new_onto.owl', './all_classes_with_deepl.csv', 'zh'
 python editonto.py -h
 ```
 
-Task 1: only segment ontology
+Task 1: only terms extraction
 ```
 python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft"
 ```
@@ -151,7 +151,7 @@ python editonto.py -o ./result/cut_onto.owl -m none -l "en2de" -t d
 > g: gemini  
 > c: chatglm4
 
-Task 3: Segment ontology and terms translation
+Task 3: extraction and translation of ontology terms
 ```
 python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft" -l "en2zh" -t d  
 ```
