@@ -7,7 +7,7 @@
 A Python-based Tool for Term Extraction and Translation of Ontology
 <h1 align="center">
   <a href="">
-    <img src="https://img.shields.io/badge/releases-v0.2-red" />
+    <img src="https://img.shields.io/badge/releases-v1.0-red" />
   </a>
   <a href="">
     <img src="https://img.shields.io/badge/docs-v1.0-yellow" />
