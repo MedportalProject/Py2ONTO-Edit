@@ -1,5 +1,5 @@
 # THIS FILE IS PART OF Py2ONTO PROJECT
-# Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translation
+# Py2ONTO-Edit: A Python-based Tool for Ontology Term Extraction and Translation
 #
 # THIS PROGRAM IS OPENSOURCE SOFTWARE, IS LICENSED UNDER LGPL-3.0 license
 #
