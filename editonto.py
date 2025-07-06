@@ -1,17 +1,18 @@
-# THIS FILE IS PART OF Py2ONTO PROJECT 
-# Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translation
+# THIS FILE IS PART OF Py2ONTO PROJECT
+# Py2ONTO-Edit: A Python-based Tool for Ontology Term Extraction and Translation
 #
 # THIS PROGRAM IS OPENSOURCE SOFTWARE, IS LICENSED UNDER LGPL-3.0 license
 #
 # IN THIS PROGRAM WE USED OTHER OPEN SOURCE PROGRAM AND Translate Services:
 # DeepL API: https://www.deepl.com/zh/pro-api/
 # ChatGLM-130B API: https://bigmodel.cn/
-# Gemini API: https://ai.google.dev/ 
+# Gemini API: https://ai.google.dev/
 # Owlready2: https://bitbucket.org/jibalamy/owlready2
 # Owlready2: LGPL-3.0 license, https://bitbucket.org/jibalamy/owlready2/src/master/LICENSE.txt
 # argos-translate, MIT License, https://github.com/argosopentech/argos-translate
 # HumanDiseaseOntology: CC0-1.0, https://github.com/DiseaseOntology/HumanDiseaseOntology
 # ExcelDNA: zLib license, Copyright (C) 2005-2020 Govert van Drimmelen
+# EFO: https://www.ebi.ac.uk/efo/
 # SEE FILE LICENSE IN LICENSE FOLDER
 #
 
@@ -162,7 +163,7 @@ class EDIT_ONTO(object):
         self.owl_path = owl_path
         self.onto = get_ontology(self.owl_path).load()
         self.cut_save_path = ''
-        self.owl2csv_path = './part_onto.csv'
+        self.owl2csv_path = 'result/part_onto.csv'
         self.translate2csv_dir = ''
         self.add_owl_path = ''
         # assert self.onto != None, "Please enter an available ontology path"
@@ -236,51 +237,76 @@ class EDIT_ONTO(object):
     # 切割得到某一个术语下所有的数据
     def cut_part_onto(self, term):
         print(self.onto.base_iri)
-        # cut_root_class = self.onto.search_one(label=term)
         cut_root_class = self.__get_one_class(term)
         if cut_root_class is None:
             print("Class Information Not Found!")
+            return
 
         self.temp_class = []
-        # 获取保存的本体列表
-        self.__get_all_class(cut_root_class)
-        # 删除本体其他实体
-        self.__del_class_not_in_list(Thing, self.temp_class)
+        self.__get_all_class(cut_root_class)  # 收集 {T} ∪ H
+        S = set(self.temp_class)
 
-        # 保存本体
+        # 步骤1：移除不在 S 中的术语
+        self.__del_class_not_in_list(Thing, S)
+
+        # 步骤2 & 3：移除关系
+        relationships = list(self.onto.object_properties())
+        for r in relationships:
+            subject = r.domain[0] if r.domain else None
+            object = r.range[0] if r.range else None
+            if subject not in S or object not in S:
+                destroy_entity(r)
+
+        # 保存修改后的本体
         save_path = self.save_new_onto(self.onto)
-        # 返回生成的本体
         return save_path
 
         # 切割得到某一术语下，某一术语之前所有数据
 
-    def cut_part_onto_selection(self, term, *args):
-        cut_root_class = self.__get_one_class(term)
-        if cut_root_class is None:
-            print("Class Information Not Found!")
-        self.temp_class = []
-        # 获取保存的本体列表
-        self.__get_all_class(cut_root_class)
-        target_root_class_list = self.temp_class
+    def cut_part_onto_selection(self, begin_term, *end_terms):
+        begin_class = self.__get_one_class(begin_term)
+        if begin_class is None:
+            print("Head Class Information Not Found!")
+            return
 
+        # 步骤1：获取 begin-term 的所有子节点
         self.temp_class = []
-        for item in args:
-            cut_item_class = self.__get_one_class(item)
-            if cut_item_class is None:
-                print("Class Information Not Found!")
-            assert cut_item_class in target_root_class_list, 'Please enter the bottom class, which is within the target class and its subclass..'
-            self.__get_all_class(cut_item_class)
-            self.temp_class.remove(cut_item_class)
-        bottom_class_list = self.temp_class
-        for item in bottom_class_list:
-            print(item.label)
-            target_root_class_list.remove(item)
-        # 删除本体其他实体
-        self.__del_class_not_in_list(Thing, target_root_class_list)
+        self.__get_all_class(begin_class)
+        all_subclasses = set(self.temp_class)
+        all_subclasses.add(begin_class)
 
-        # 保存本体
+        # 步骤2：获取 end-term 的子节点
+        end_subclasses = set()
+        end_classes = []
+        for end_term in end_terms:
+            end_class = self.__get_one_class(end_term)
+            if end_class is None:
+                print(f"End Class {end_term} Not Found!")
+                continue
+            if end_class not in all_subclasses:
+                print(f"Warning: {end_term} is not a subclass of {begin_term}")
+                continue
+            end_classes.append(end_class)
+            self.temp_class = []
+            self.__get_all_class(end_class)
+            end_subclasses.update(self.temp_class)  # 仅子节点
+
+        # 步骤3：删除 end-term 的子节点，保留 end-term 本身
+        S = all_subclasses - end_subclasses
+        S.update(end_classes)
+
+        # 移除不在范围 S 中的类
+        self.__del_class_not_in_list(Thing, S)
+
+        # 移除不相关的关系
+        relationships = list(self.onto.object_properties())
+        for r in relationships:
+            subject = r.domain[0] if r.domain else None
+            object = r.range[0] if r.range else None
+            if subject not in S or object not in S:
+                destroy_entity(r)
+
         save_path = self.save_new_onto(self.onto)
-        # 返回生成的本体
         return save_path
 
     # 通过新建本体完成本体切割
@@ -508,7 +534,7 @@ class EDIT_ONTO(object):
             self.translate2csv_dir + 'all_classes_with_GLM.csv', index=False, encoding='utf_8_sig')
 
     # 使用Google Gemini 翻译，目前1.5Pro已公开，但是有访问限制
-    def translate_terms_with_gemini(self, csv_path, api_key, translation_mode, model_name="gemini-pro"):
+    def translate_terms_with_gemini(self, csv_path, api_key, translation_mode, model_name="gemini-1.5-flash"):
         trans = TRANSLATE(translation_mode)
         result = []
         data = read_csv(csv_path)
@@ -516,7 +542,6 @@ class EDIT_ONTO(object):
         all_items = []
         for _, item in tqdm(data.iterrows()):
             all_items.append([item['IRI'], item['name'], item['label_en']])
-
         for item in tqdm(all_items):
             t = trans.gemini_api(item[2], api_key=api_key, model_name=model_name)
             result.append([item[0], item[1], item[2], t])
@@ -560,7 +585,7 @@ class Process(object):
         parser.add_argument('-s', '--single_root', type=str, help='root term for cutting')
         parser.add_argument('-e', '--end_nodes', type=str, help='tail terms for cutting, for example term1,term2,term3')
         parser.add_argument('-l', '--translation_mode', type=str, help='tranlate English term to other language', choices=['en2zh', 'en2fr', 'en2de'])
-        parser.add_argument('-t', '--translation_methods', type=str, choices=['l', 'd', 'g', 'c', 'b'],
+        parser.add_argument('-t', '--translation_methods', type=str, choices=['l', 'd', 'g', 'c'],
                             help='entry l/d/g/c to assign local/deepl/gemini/chatglm4')
         parser.add_argument('-p', '--owl2csv_path', type=str, default='./result/part_onto.csv', help='owl to csv path')
         parser.add_argument('-d', '--translate2csv_dir', type=str, default='./result/',
@@ -605,8 +630,8 @@ class Process(object):
                 # 将 end_nodes 参数拆分成一个列表, 按逗号分隔，中间不能有空格
                 end_nodes = args.end_nodes.split(',') if args.end_nodes else []
                 if strat_root and end_nodes:
-                    print('Get the ontology before a single node, certain nodes')
-                    cutONTO.cut_part_onto_selection(strat_root, end_nodes)
+                    print('Beginning extraction')
+                    cutONTO.cut_part_onto_selection(strat_root, *end_nodes)
                 elif strat_root:
                     print('Missing end nodes, get data under a single node')
                     cutONTO.cut_part_onto(args.single_root)
@@ -661,8 +686,7 @@ class Process(object):
                         raise ValueError("Missing API keys of gemini")
                     else:
                         # 调用Gemini翻译方法
-                        cutONTO.translate_terms_with_gemini(cutONTO.owl2csv_path, translation_mode,
-                                                        api_key=gemini_api)
+                        cutONTO.translate_terms_with_gemini(cutONTO.owl2csv_path, gemini_api, translation_mode)
                 elif translation_method == 'c':
                     print("Using ChatGLM4 translation method, Please fill in the key information in the code.")
                     method = "GLM"
@@ -672,8 +696,7 @@ class Process(object):
                         raise ValueError("Missing API keys of glm")
                     else:
                         # 调用ChatGLM4翻译方法
-                        cutONTO.translate_terms_with_GLM(cutONTO.owl2csv_path, translation_mode,
-                                                     api_key=glm_api)
+                        cutONTO.translate_terms_with_GLM(cutONTO.owl2csv_path, glm_api, translation_mode)
                 else:
                     raise ValueError("Invalid translation method")
 
