@@ -35,6 +35,9 @@ A Python-based Tool for Term Extraction and Translation of Ontology
 Py2ONTO-Edit updates new functions that fouces on term extraction and translation of Python-Project
 
 ### Update
+[2025/7/6]
+- Fixed some bugs
+
 [2024/8/6]add new translate function
 - Support for translation from English to German
 - Support for translation from English to French
