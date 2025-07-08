@@ -209,6 +209,7 @@ class EDIT_ONTO(object):
     # 自动判断name和iri
     def __get_one_class(self, text):
         target_class = None
+        text = text.strip()
         if not self.onto.search_one(label=text) is None:
             print('label mathched')
             target_class = self.onto.search_one(label=text)
@@ -596,8 +597,8 @@ class Process(object):
 
     def run_parser(self, args):
         # 读取api key配置文件
-        if os.path.exists('./translation_api_key_setting.yaml'):
-            with open('./translation_api_key_setting.yaml') as f:
+        if os.path.exists('../translation_api_key_setting.yaml'):
+            with open('../translation_api_key_setting.yaml') as f:
                 config_data = yaml.safe_load(f)
         else:
             raise ValueError('Missing API keys configuration file')
