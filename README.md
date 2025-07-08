@@ -141,7 +141,7 @@ python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft"
 Task 2: only terms extraction (selective depth extraction)
 *use EFO ontology
 ```
-python editonto.py -o .\efo.owl -m select -s "cell type" -e "endothelial cell,kidney cell,stem cell"
+python editonto.py -o ./efo.owl -m select -s "cell type" -e "endothelial cell,kidney cell,stem cell"
 ```
 
 Task 3: only terms translation
