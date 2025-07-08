@@ -133,12 +133,18 @@ humanDO.add_Chinese_label('./new_onto.owl', './all_classes_with_deepl.csv', 'zh'
 python editonto.py -h
 ```
 
-Task 1: only terms extraction
+Task 1: only terms extraction (global extraction)
 ```
 python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft"
 ```
 
-Task 2: only terms translation
+Task 2: only terms extraction (selective depth extraction)
+*use EFO ontology
+```
+python editonto.py -o .\efo.owl -m select -s "cell type" -e "endothelial cell,kidney cell,stem cell"
+```
+
+Task 3: only terms translation
 ```
 python editonto.py -o ./result/cut_onto.owl -m none -l "en2de" -t d  
 ```
@@ -154,7 +160,7 @@ python editonto.py -o ./result/cut_onto.owl -m none -l "en2de" -t d
 > g: gemini  
 > c: chatglm4
 
-Task 3: extraction and translation of ontology terms
+Task 4: extraction and translation of ontology terms
 ```
 python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft" -l "en2zh" -t d  
 ```
