@@ -29,6 +29,7 @@ A Python-based Tool for Term Extraction and Translation of Ontology
 - [Filetree](#Filetree)
 - [Getting_Started](#Getting_Started)
 - [Usage](#Usage)
+- [Limitation](#Limitation)
 - [Cite](#Cite)
 
 ### Introduction
