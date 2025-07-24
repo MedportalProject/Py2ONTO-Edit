@@ -171,6 +171,13 @@ Task 4: extraction and translation of ontology terms
 python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft" -l "en2zh" -t d  
 ```
 
+### Limitation
+##### Use of Well-Structured Ontologies is Required
+The tool assumes a well-structured ontology as input; poorly structured or inconsistent models may lead to errors during processing.
+
+##### Manual Review Still Needed for Accurate Translation
+Even under strict translation requirements, the output may require manual review and correction to ensure semantic precision and domain accuracy.
+
 ### Cite
 If you find our work useful for your research, please consider citing it:
 ```
