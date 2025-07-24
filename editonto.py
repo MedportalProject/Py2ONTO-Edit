@@ -1,5 +1,5 @@
 # THIS FILE IS PART OF Py2ONTO PROJECT
-# Py2ONTO-Edit: A Python-based Tool for Ontology Term Extraction and Translation
+# Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translation
 #
 # THIS PROGRAM IS OPENSOURCE SOFTWARE, IS LICENSED UNDER LGPL-3.0 license
 #
@@ -93,7 +93,7 @@ class TRANSLATE(object):
 
     # 使用deeplAPI
     # 需要验证
-    def deepl_api(self, content, auth_key='af75f07e-821e-4724-9300-2748eaa809ea:fx'):
+    def deepl_api(self, content, auth_key):
         if len(auth_key) == 0:
             raise ValueError("Missing API keys of deepl")
         translator = deepl.Translator(auth_key)
@@ -189,10 +189,32 @@ class EDIT_ONTO(object):
 
     # 删除非特指列表中的类
     def __del_class_not_in_list(self, root_class, cut_class_list):
+        #print("切割的数据")
+        #print(len(cut_class_list))
+        self.__del_class_in_hierarchy(root_class, cut_class_list)
+        # 计算下现在所有的Thing节点下的subclasses
+        self.temp_class = []
+        self.__get_all_class(Thing)
+        #print(len(self.temp_class))
+        thing_all_classes = set(self.temp_class)
+        self.temp_class = []
+        #print(len(thing_all_classes))
+        # check agein
+        if len(thing_all_classes) > len(cut_class_list) + 1:
+            for item in thing_all_classes:
+                try:
+                    if item not in cut_class_list and item is not Thing:
+                        #print(item.id)
+                        destroy_entity(item)
+                except Exception as e:
+                    print(e)
+
+    # 通过递归的方法进行删除
+    def __del_class_in_hierarchy(self, root_class, cut_class_list):
         if len(list(root_class.subclasses())) > 0:
             try:
                 for item in root_class.subclasses():
-                    self.__del_class_not_in_list(item, cut_class_list)
+                    self.__del_class_in_hierarchy(item, cut_class_list)
             except Exception as e:
                 print(e)
         if root_class not in cut_class_list:
