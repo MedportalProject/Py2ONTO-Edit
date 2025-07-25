@@ -43,8 +43,7 @@ Py2ONTO-Edit updates new functions that fouces on term extraction and translatio
 [2025/7/6]
 - Fixed some bugs
 
-[2024/8/6]
-- Add new translate function
+[2024/8/6] Add new translate function
 - Support for translation from English to German
 - Support for translation from English to French
 
