@@ -172,7 +172,6 @@ python editonto.py -o ./HumanDO.owl -m all -s "orofacial cleft" -l "en2zh" -t d
 ```
 
 ### Limitation
-```
 ##### Use of Well-Structured Ontologies is Required
 The tool assumes a well-structured ontology as input; poorly structured or inconsistent models may lead to errors during processing.
 
@@ -181,7 +180,7 @@ Even under strict translation requirements, the output may require manual review
 
 ##### Limited Language and API Support
 Currently, the tool supports only a limited set of languages (English to Chinese, English to German, English to French) and translation APIs (DeepL, Argos translate, Gemini, ChatGLM). 
-```
+
 
 ### Cite
 If you find our work useful for your research, please consider citing it:
