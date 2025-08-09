@@ -1,3 +1,4 @@
+
 # THIS FILE IS PART OF Py2ONTO PROJECT
 # Py2ONTO-Edit: A Python-based Tool for Ontology Segmentation and Terms Translation
 #
@@ -93,7 +94,7 @@ class TRANSLATE(object):
 
     # 使用deeplAPI
     # 需要验证
-    def deepl_api(self, content, auth_key):
+    def deepl_api(self, content, auth_key='af75f07e-821e-4724-9300-2748eaa809ea:fx'):
         if len(auth_key) == 0:
             raise ValueError("Missing API keys of deepl")
         translator = deepl.Translator(auth_key)
@@ -217,8 +218,9 @@ class EDIT_ONTO(object):
                     self.__del_class_in_hierarchy(item, cut_class_list)
             except Exception as e:
                 print(e)
-        if root_class not in cut_class_list:
+        if root_class not in cut_class_list and root_class is not Thing:
             try:
+                #print(root_class)
                 destroy_entity(root_class)
             except Exception as e:
                 print(e)
@@ -619,8 +621,8 @@ class Process(object):
 
     def run_parser(self, args):
         # 读取api key配置文件
-        if os.path.exists('../translation_api_key_setting.yaml'):
-            with open('../translation_api_key_setting.yaml') as f:
+        if os.path.exists('./translation_api_key_setting.yaml'):
+            with open('./translation_api_key_setting.yaml') as f:
                 config_data = yaml.safe_load(f)
         else:
             raise ValueError('Missing API keys configuration file')
